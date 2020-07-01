@@ -1,0 +1,29 @@
+<div class="col-md-4 mx-auto">
+    <div class="card">
+        <div class="card-header">
+            <h3>Edita docente</h3>
+        </div>
+        <div class="card-body">
+            <form action="/docentes/edit/{{docente.id}}?_method=PUT" method="POST">
+                <input type="hidden" name="_method" value="PUT">
+                <div class="form-group">
+                    <input type="text" name="nombre" class="form-control" value="{{docente.nombre}}">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="email" class="form-control" value="{{docente.email}}">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="phone" class="form-control" value="{{docente.phone}}">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="grado" class="form-control" value="{{docente.grado}}">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary btn-block" type="submit">
+                        Guardar
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
